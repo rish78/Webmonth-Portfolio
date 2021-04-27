@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact{
+    background:url("https://c4.wallpaperflare.com/wallpaper/539/588/859/abstract-gray-low-poly-polygon-art-wallpaper-preview.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    width:100vw;
+    position:relative;
+    
+    
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-around; 
+    width:100vw;
+    font-size:18px;
+    padding:20px;
+    position:fixed;
+    top:0;
+    /* background:black; */
+    z-index:12;
+    float:right;
+}
+
+.navbar a{
+    text-decoration: none;  
+    color:white;
+    transition:all 1s;
+}
+
+.navbar a:hover{
+    transform: scale(1.5,1.5);
+    
+}
+
+.form{
+    height:480px;
+    width:500px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:rgba(32, 32, 32, 0.548);
+    position:absolute;
+    top:180px;
+    left:500px;
+    color:rgb(175, 171, 184);
+    border-radius: 50px;
+    box-shadow:2px 1px rgb(10, 8, 8);
+    transition:all 1.5s;
+   
+}
+.form:hover{
+    box-shadow:10px 7px rgb(10, 8, 8);
+    
+}
+.formgroup{
+    width:100%;
+    margin-top:20px;
+    font-size:18px;
+}
+
+.formgroup input,
+.formgroup textarea{
+    width:100%;
+    padding:2px;
+    margin-top:2px;
+}
+input{
+    transition:all 1.5s;
+}
+input:focus{
+    transform:scale(1.2,1.2);
+    
+}
+textarea{
+    resize: vertical;
+}
+input[type="submit"]{
+    width:80%;
+    padding:7px;
+    margin-left:30px;
+    margin-top:5px;
+    font-size:17px;
+    background:rgb(129, 126, 126);
+    color:white;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background:rgb(90, 88, 88);
+    transform:translateY(8px);
+}
+
+.footer{
+    width:100vw;
+    height:200px;
+    background:black;
+    position:absolute;
+    margin-top:20px;
+    top:670px;;
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.socials a{
+    font-size:50px;
+    color:white;
+    padding:25px;
+    
+}
+.fab{
+    transition:all 1s;
+}
+.fab:hover{
+    transform:scale(1.5,1.5);
+    
+}
+
+.footer .text{
+    color:white;
+    margin-top:20px;
+    text-align: center;
+}

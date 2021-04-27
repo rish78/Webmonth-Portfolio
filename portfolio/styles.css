@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.landing{
+    background: url("https://i.ibb.co/0M1QB6F/dark-low-poly-background-1048-7971.jpg");
+    height:100vh;
+    width:100vw;
+    
+    
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-around; 
+    width:100vw;
+    padding:20px;
+    position:fixed;
+    /* background:black; */
+    font-size:18px;
+    
+}
+.name{
+    display:inline-block;
+    background-size:10px 20px;
+    background-color:transparent;
+    transform:skew(-10deg);
+    
+    
+    
+    
+    transition:all 1s;
+    
+    
+    animation-iteration-count: infinite;
+
+}
+.name:hover{
+    text-decoration:underline;
+    text-decoration-color: white;
+    transition:all 1s;
+    transform-origin:left;
+    background:rgb(33, 114, 168);
+    animation:backgroundchange 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundchange {
+    0%{
+        background:rgb(33, 114, 168);
+    }
+    15%{
+        background:rgb(20, 93, 228);
+        
+    }
+    35%{
+        background:rgb(156, 172, 14);
+    }
+    55%{
+        background:rgb(154, 211, 39);
+    }
+    75%{
+        background:orange;
+    }
+    90%{
+        background:rgb(109, 109, 204);
+    }
+}
+
+
+.navbar a{
+    text-decoration: none;  
+    color:white;
+    transition:all 1s;
+}
+
+.landing{
+    display:flex;
+}
+
+.landing img{
+    align-self:center;
+    margin:150px 150px;
+    height:400px;
+    width:370px;
+}
+
+.landing .text{
+    font-size:80px;
+    margin-top:220px;
+    color:white;
+    
+}
+
+.navbar a:hover{
+    transform: scale(1.5,1.5);
+    
+}
+
